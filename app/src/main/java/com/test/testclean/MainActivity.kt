@@ -10,11 +10,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ripple_circle_view.post { ripple_circle_view.start() }
 
 
+        random_draw_view.startA(this,RandomDrawActivity::class.java)
         scan.startA(this, ScanActivity::class.java)
         clean.startA(this, CleanActivity::class.java)
+        start_home_view.setOnClickListener {
+            ripple_circle_view.post { ripple_circle_view.start() }
+        }
+        stop_home_view.setOnClickListener {
+            ripple_circle_view.release()
+        }
     }
 
     override fun onResume() {
