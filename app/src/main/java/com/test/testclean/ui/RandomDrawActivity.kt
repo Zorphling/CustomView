@@ -1,7 +1,8 @@
-package com.test.testclean
+package com.test.testclean.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.test.testclean.R
 
 class RandomDrawActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

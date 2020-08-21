@@ -1,4 +1,4 @@
-package com.test.testclean
+package com.test.testclean.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

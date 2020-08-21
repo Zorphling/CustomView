@@ -1,7 +1,8 @@
-package com.test.testclean
+package com.test.testclean.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.test.testclean.R
 import kotlinx.android.synthetic.main.activity_scan.*
 
 class ScanActivity : AppCompatActivity() {

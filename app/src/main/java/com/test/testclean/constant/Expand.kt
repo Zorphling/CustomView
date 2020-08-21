@@ -14,6 +14,30 @@ fun <T> View.startA(context: Context, clazz: Class<T>) {
 }
 
 const val TAG = "CONSTANT"
-fun log(msg: Any) {
+fun Any.log(msg: Any) {
     Log.e("$TAG", "$msg")
+}
+
+/**
+ * dp转px
+ *
+ * @param context 上下文
+ * @param dpValue dp值
+ * @return px值
+ */
+fun dp2px(dpValue: Float): Int {
+    val scale = App.application.resources.displayMetrics.density
+    return (dpValue * scale + 0.5f).toInt()
+}
+
+/**
+ * px转dp
+ *
+ * @param context 上下文
+ * @param pxValue px值
+ * @return dp值
+ */
+fun px2dp(pxValue: Float): Int {
+    val scale = App.application.resources.displayMetrics.density
+    return (pxValue / scale + 0.5f).toInt()
 }

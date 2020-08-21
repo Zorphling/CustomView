@@ -1,4 +1,4 @@
-package com.test.testclean.test
+package com.test.testclean.view
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -11,6 +11,7 @@ import android.view.View
 import com.test.testclean.R
 import com.test.testclean.constant.log
 import kotlin.math.cos
+import kotlin.math.log
 import kotlin.math.min
 import kotlin.math.sin
 
@@ -41,6 +42,7 @@ class RandomDrawView(context: Context, attr: AttributeSet) : View(context) {
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
+
         mCenterPoint = Point()
         mCenterPoint.x = w / 2
         mCenterPoint.y = h / 2
@@ -63,8 +65,8 @@ class RandomDrawView(context: Context, attr: AttributeSet) : View(context) {
         //绘制一组点中指定的几个坐标
         mCanvers.drawPoints(
             floatArrayOf(50f, 150f, 100f, 150f, 150f, 150f, 200f, 150f, 250f, 150f),
-            2,
-            4,
+            1,
+            3,
             mPaint
         )
 

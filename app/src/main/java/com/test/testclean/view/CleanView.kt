@@ -155,7 +155,7 @@ open class CleanView(context: Context, attr: AttributeSet) : View(context, attr)
 //        }
         //画中心蓝色圆
         drawCenterCircle()
-        //
+        //绘制扫描渐变
         drawArc()
     }
 

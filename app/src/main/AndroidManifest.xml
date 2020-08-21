@@ -3,16 +3,19 @@
     package="com.test.testclean">
 
     <application
+        android:name=".constant.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RandomDrawActivity"></activity>
-        <activity android:name=".CleanActivity" />
-        <activity android:name=".ScanActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.RandomActivity"></activity>
+        <activity android:name=".ui.WaveActivity" />
+        <activity android:name=".ui.RandomDrawActivity" />
+        <activity android:name=".ui.CleanActivity" />
+        <activity android:name=".ui.ScanActivity" />
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
