@@ -65,8 +65,8 @@ class RandomDrawView(context: Context, attr: AttributeSet) : View(context) {
         //绘制一组点中指定的几个坐标
         mCanvers.drawPoints(
             floatArrayOf(50f, 150f, 100f, 150f, 150f, 150f, 200f, 150f, 250f, 150f),
-            1,
             3,
+            7,
             mPaint
         )
 

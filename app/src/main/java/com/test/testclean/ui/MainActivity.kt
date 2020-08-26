@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
             ripple_circle_view.release()
         }
         wave_view.startA(this, WaveActivity::class.java)
+        temp_view.startA(this,TempActivity::class.java)
+        wave_ok_view.startA(this,WaveOkActivity::class.java)
     }
 
     override fun onResume() {

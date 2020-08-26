@@ -6,15 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.WaveActivity">
 
-    <com.test.testclean.view.WaveProgressView
+    <com.test.testclean.view.MyWaveView
         android:id="@+id/wave_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        app:wave_width="50dp"
-        app:wave_height="10dp"
-        app:bg_color="#47C5FF"
-        app:wave_color="#60FFEE" />
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
